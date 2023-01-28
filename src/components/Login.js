@@ -24,7 +24,7 @@ function Login() {
         }
         console.log(data);
           axios
-            .post("http://localhost:8080/api/v1/auth/authenticate",
+            .post("http://143.198.57.140:8080/api/v1/auth/authenticate",
             data
             )
             .then(response => {

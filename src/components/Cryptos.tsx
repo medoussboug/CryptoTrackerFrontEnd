@@ -27,7 +27,7 @@ function Cryptos() {
 
   useEffect(()=> {
     axios
-    .get('http://localhost:8080/api/v1/cryptocurrencies')
+    .get('http://143.198.57.140:8080/api/v1/cryptocurrencies')
     .then((response) => {
       setData(response.data);      
       })
@@ -82,7 +82,7 @@ function Cryptos() {
 
    console.log(yourConfig)
       axios
-        .post("http://localhost:8080/api/v1/cryptocurrencies/favorites",
+        .post("http://143.198.57.140:8080/api/v1/cryptocurrencies/favorites",
         data , 
         yourConfig
         )

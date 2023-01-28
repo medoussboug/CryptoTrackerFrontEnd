@@ -27,7 +27,7 @@ function Register() {
         }
         console.log(data);
           axios
-            .post("http://localhost:8080/api/v1/user/add",
+            .post("http://143.198.57.140:8080/api/v1/user/add",
             data
             )
             .then(response => {
