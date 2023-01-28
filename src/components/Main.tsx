@@ -30,6 +30,8 @@ function Main() {
     `https://min-api.cryptocompare.com/data/pricemulti?fsyms=${selectedCurrencies2}&tsyms=USD`,
     `https://min-api.cryptocompare.com/data/pricemulti?fsyms=${selectedCurrencies3}&tsyms=USD`
   );
+
+
   const audioRef = useRef() as React.MutableRefObject<HTMLAudioElement>;
 
   //Init
@@ -176,17 +178,6 @@ function Main() {
         }}
       />
       <Cryptos
-        {...{
-          currencies,
-          exchangeRates,
-          calculateAfter,
-          exchangeResults,
-          alertAtMinimum,
-          calculateResult,
-          favorites,
-          setFavorites,
-        }}
-        data={handleAppState()}
       />
       <Footer />
     </>
