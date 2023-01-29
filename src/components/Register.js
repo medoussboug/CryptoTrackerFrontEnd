@@ -33,7 +33,10 @@ function Register() {
             .then(response => {
               console.log(response.data);
                 if(response.status == 200){
-                    navigate('/cryptos')
+                    navigate('/')
+                }
+                else {
+                    alert("Invalid inputs try again")
                 }
             })
             .catch(error => {
