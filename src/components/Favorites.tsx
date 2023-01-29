@@ -37,7 +37,7 @@ function Favorites() {
        
     
         axios
-        .get('http://143.198.57.140:8080/api/v1/cryptocurrencies/favorites', yourConfig)
+        .get('https://backend-8npem.ondigitalocean.app/api/v1/cryptocurrencies/favorites', yourConfig)
         .then((response) => {
           console.log(response.data)
           setData(response.data);      
